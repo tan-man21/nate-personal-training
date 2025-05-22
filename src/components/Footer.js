@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Footer() {
 
@@ -23,6 +25,15 @@ function Footer() {
         () => {
           console.log('SUCCESS!');
           form.current.reset();
+          toast.success('Message Sent!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -32,13 +43,14 @@ function Footer() {
 
     return (
         <div className='footer'>
+            <ToastContainer />
             <Row>
-                <Col className='text-center align-content-center' xs={12} md={6}>
+                <Col className='text-center align-content-center' xs={12} md={6} data-aos="fade-up">
                     <h5>CONTACT ME</h5>
                     <br />
                     <h5>nate@peterson.com</h5>
                 </Col>
-                <Col xs={12} md={6}>
+                <Col xs={12} md={6} data-aos="fade-up">
                     <Form className='p-5' ref={form} onSubmit={sendEmail}>
                         <Form.Group className="mb-3" controlId="formBasicName">
                             <Form.Control placeholder="Name" name='name' />

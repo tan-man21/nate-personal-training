@@ -58,10 +58,10 @@ function HomePage() {
         </Container>
         <Container>
             <Row className="about-me-row">
-                <Col md={6} className="about-me-image-col">
+                <Col md={6} className="about-me-image-col" data-aos="fade-right">
                     <Image src={"https://static.vecteezy.com/system/resources/thumbnails/007/421/470/small/handsome-cheerful-bearded-man-smiles-gladfully-dressed-in-casual-white-t-shirt-being-in-good-mood-poses-against-blue-background-with-copy-space-glad-european-guy-with-stubble-stands-indoor-free-photo.jpg"} alt="About Me" className="about-me-image" roundedCircle />
                 </Col>
-                <Col md={6} className="about-me-text-col">
+                <Col md={6} className="about-me-text-col" data-aos="fade-left">
                     <h2>About Me</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex. Twoetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
