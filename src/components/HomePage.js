@@ -24,7 +24,7 @@ function HomePage() {
             <Col className='home-info' lg={4} sm={12} data-aos="fade-left">
                 <h2 style={{color: '#a7a7a7'}}>Train with Nate Peterson</h2>
                 <h1>Personalized Online Personal Training</h1>
-                <Button className='online-training-btn' href='/online-training' style={{fontWeight: 'bold'}}>Start Online Training</Button>
+                <a href='/online-training' style={{textDecoration: 'none'}}><h3 className='hover-2'>Start Online Training</h3></a>
             </Col>
         </Row>
         </Container>
