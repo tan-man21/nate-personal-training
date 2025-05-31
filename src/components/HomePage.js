@@ -29,7 +29,7 @@ function HomePage() {
         </Row> */}
         <Image src="./assets/jonathan-borba-R0y_bEUjiOM-unsplash.jpg" className='home-img' alt='Home Image' fluid />
         <div className='home-content'>
-            <h1>Training</h1>
+            <h1 data-text="Training">Training</h1>
         </div>
         </Container>
         <Container fluid className='service-blocks-container text-center'>
@@ -41,19 +41,19 @@ function HomePage() {
             </Row>
             <Row noGutters className='d-flex justify-content-space-between'>
                 <Col className='text-white service-block mx-auto' xs={12} md={4} data-aos="fade-right" data-aos-duration="1000">
-                    <h1><i class="fa-solid fa-dumbbell"></i></h1>
+                    <h2><i class="fa-solid fa-dumbbell"></i></h2>
                     <h3>Personal Training Plans</h3>
                     <p>My job is to break it all down for you, to create you a truly custom plan which focuses on you, your goals, lifestyle, available time and ability.</p>
                     <p>My job is to break it all down for you, to create you a truly custom plan which focuses on you, your goals, lifestyle, available time and ability.</p>
                 </Col>
                 <Col className='text-white service-block mx-auto' xs={12} md={4} data-aos="fade-up" data-aos-duration="1000">
-                    <h1><i class="fa-solid fa-weight-hanging"></i></h1>
+                    <h2><i class="fa-solid fa-weight-hanging"></i></h2>
                     <h3>Weight Management</h3>
                     <p>My job is to break it all down for you, to create you a truly custom plan which focuses on you, your goals, lifestyle, available time and ability.</p>
                     <p>My job is to break it all down for you, to create you a truly custom plan which focuses on you, your goals, lifestyle, available time and ability.</p>
                 </Col>
                 <Col className='text-white service-block mx-auto' xs={12} md={4} data-aos="fade-left" data-aos-duration="1000">
-                    <h1><i class="fa-solid fa-handshake-angle"></i></h1>
+                    <h2><i class="fa-solid fa-handshake-angle"></i></h2>
                     <h3>General Nutritional Guidance</h3>
                     <p>My job is to break it all down for you, to create you a truly custom plan which focuses on you, your goals, lifestyle, available time and ability.</p>
                     <p>My job is to break it all down for you, to create you a truly custom plan which focuses on you, your goals, lifestyle, available time and ability.</p>
