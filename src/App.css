@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  box-sizing: border-box;
 }
 
 body h1 {
@@ -92,13 +93,20 @@ body p {
 }
 
 .home-img{
-  background-image: url('./assets/subhaan-saleem-irEWJkDxIW8-unsplash.jpg');
+  /* background-image: url('./assets/subhaan-saleem-irEWJkDxIW8-unsplash.jpg');
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 90vh;
+  width: 100%; */
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
   width: 100%;
-  position: relative;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -125,6 +133,14 @@ body p {
 .home-info-container{
   margin: 0 !important;
   width: 100%;
+  padding: 0 !important;
+  background-color: rgba(31, 31, 31, 0.76);
+  z-index: -1 !important;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .online-training-btn {
