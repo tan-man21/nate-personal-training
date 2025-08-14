@@ -1,10 +1,7 @@
 import Row from 'react-bootstrap/Row';
 import '../App.css';
 import Col from 'react-bootstrap/Col';
-import NavBar from './NavBar'
-import { Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -34,9 +31,9 @@ function HomePage() {
         </Container>
         <Container fluid className='service-blocks-container text-center'>
             <Row data-aos="fade-up">
-                <Col className='text-white pt-3'>
-                    <h2>Custom Online Personal Training & Nutrition</h2>
-                    <p>Thisi idfansdfi fadnfaklsdnfaleflak difa dnfakdlfiawe finfaldf iefa</p>
+                <Col className='pt-3'>
+                    <h2 style={{color: '#e1200f'}}>Custom Online Personal Training & Nutrition</h2>
+                    <p className='text-white'>Thisi idfansdfi fadnfaklsdnfaleflak difa dnfakdlfiawe finfaldf iefa</p>
                 </Col>
             </Row>
             <Row noGutters className='d-flex justify-content-space-between'>

@@ -10,7 +10,7 @@ function NavBar() {
     const location = useLocation();
 
     return (
-        <Navbar bg="black" data-bs-theme="dark" key={'lg'} expand={'lg'} sticky='top' >
+        <Navbar className='site-navbar' data-bs-theme="dark" key={'lg'} expand={'lg'} sticky='top' >
         <Container>
           <Navbar.Brand href="/">My Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
