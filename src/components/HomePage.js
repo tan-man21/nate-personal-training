@@ -59,19 +59,16 @@ function HomePage() {
         </Container>
         <Container>
             <Row className="about-me-row">
-                <Col md={6} className="about-me-image-col" data-aos="fade-right">
-                    <Image src={"./assets/about_headshot.jpeg"} alt="About Me" className="about-me-image" roundedCircle />
-                </Col>
-                <Col md={6} className="about-me-text-col" data-aos="fade-left">
+                <Col md={6} className="about-me-text-col" data-aos="fade-right">
                     <h2>About Me</h2>
-                    <p>At the start of his fitness journey, Nate weighed just 119 pounds, with little
-                    knowledge or direction regarding how to maximize his health, function, and
-                    performance. Fast forward a few years, and under the guidance of various trainers,
-                    Nate went on to place 1st in two separate Classic Physique bodybuilding competitions
-                    (Novice – OCB and NPC). As a personal trainer, he understands what it&#39;s like to be at
-                    both ends of the fitness spectrum and has witnessed firsthand the transformative impact
-                    that proper diet and training can have. These experiences inspired him to help others
-                    improve their health, performance, and function, just as he did for himself.</p>
+                    <p>At the start of his fitness journey, Nate weighed just 119 pounds, with little knowledge or direction regarding how to maximize his health, function, and performance. Fast forward a few years, and under the guidance of various trainers, Nate went on to place 1st in two separate Classic Physique bodybuilding competitions.</p>
+                    <p>As a personal trainer, he understands what it&#39;s like to be at both ends of the fitness spectrum and has witnessed firsthand the transformative impact that proper diet and training can have.</p>
+                    <div>
+                    <a href='/about' className='about-me-btn'><span className='btn-text'>Learn More</span></a>
+                    </div>
+                </Col>
+                <Col md={6} className="about-me-image-col" data-aos="fade-left">
+                    <Image src={"./assets/about_headshot.jpeg"} alt="About preview" className="about-me-image" />
                 </Col>
             </Row>
         </Container>

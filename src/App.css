@@ -181,7 +181,7 @@ body p {
 
 /* Contact Page */
 .contact-hero {
-  background: linear-gradient(180deg, #440808 0%, #e1200f 100%);
+  background: linear-gradient(180deg, #ed3c3c 0%, #e1200f 100%);
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -428,15 +428,73 @@ body p {
 }
 
 .about-me-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 50%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 18px;
   object-fit: cover;
-  box-shadow: 1px 1px 20px 2px rgb(0 0 0 / 0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .about-me-text-col {
   padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me-btn {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+  width: 180px;
+  height: 56px;
+  border-radius: 999px;
+  text-decoration: none;
+  overflow: hidden;
+  border: 3px solid #fff;
+  background: #111827;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-me-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Spinning text and color fill effect inspired by provided snippet */
+.about-me-btn .btn-text {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  transition: color .5s, transform .5s;
+}
+
+.about-me-btn:hover .btn-text {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.about-me-btn:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e1200f; /* brand red fill */
+  transition: top .5s;
+  z-index: 2;
+}
+
+.about-me-btn:hover:before {
+  top: 0;
 }
 
 .about-hero {
