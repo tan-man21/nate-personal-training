@@ -253,6 +253,14 @@ body p {
   border: 1px solid transparent;
   overflow-wrap: break-word;
   width: 350px !important;
+  border-radius: 16px;
+  background-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform-origin: center;
+  will-change: transform;
+  backface-visibility: hidden;
+  z-index: 1;
 }
 
 /* Common style for pseudo elements */
@@ -267,9 +275,11 @@ body p {
   box-sizing: border-box;
   border: 2px solid transparent;
   pointer-events: none;
+  border-radius: 16px;
+  transition: transform 0.2s ease, border-width 0.25s ease;
 }
 
-/* Top and Bottom border (animate left to right) */
+/* Top and Bottom border (animate left to right) 
 .service-block::before {
   border-top: 2px solid #8A170C;
   border-bottom: 2px solid #8A170C;
@@ -278,14 +288,14 @@ body p {
   transform-origin: left;
 }
 
-/* Left and Right border (animate top to bottom) */
+/* Left and Right border (animate top to bottom)
 .service-block::after {
   border-left: 2px solid #8A170C;
   border-right: 2px solid #8A170C;
   transform: scaleY(0);
   transition: transform 0.2s ease 0.2s;
   transform-origin: top;
-}
+} */
 
 .service-block:hover::before {
   transform: scaleX(1);
@@ -294,6 +304,28 @@ body p {
 .service-block:hover::after {
   transform: scaleY(1);
 }
+
+/* Lift visually without shifting layout */
+.service-block:hover,
+.service-block:focus-within {
+  transform: scale(1.05) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  z-index: 3;
+}
+
+/* Thicken animated border on hover so it visually grows with the zoom */
+.service-block:hover::before,
+.service-block:hover::after {
+  border-width: 3px;
+}
+
+/* Ensure animated border scales with the transform without clipping */
+.service-block {
+  transform-style: preserve-3d;
+}
+
+/* Subtle zoom of inner content for a richer effect */
+/* Remove inner zoom; content expands naturally with the card size */
 
 .about-me-row {
   margin-top: 50px !important;
