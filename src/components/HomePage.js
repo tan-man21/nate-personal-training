@@ -16,14 +16,6 @@ function HomePage() {
   return (
     <div>
         <Container fluid className='home-info-container'>
-        {/* <Row>
-            <Col  className='home-img' lg={8} sm={12}></Col>
-            <Col className='home-info' lg={4} sm={12} data-aos="fade-left">
-                <h2 style={{color: '#a7a7a7'}}>Train with Nate Peterson</h2>
-                <h1>Personalized Online Personal Training</h1>
-                <a href='/online-training' style={{textDecoration: 'none'}}><h3 className='hover-2'>Start Online Training</h3></a>
-            </Col>
-        </Row> */}
         <Image src="./assets/jonathan-borba-R0y_bEUjiOM-unsplash.jpg" className='home-img' alt='Home Image' fluid />
         <div className='home-content'>
             <h1 data-text="Training">Training</h1>

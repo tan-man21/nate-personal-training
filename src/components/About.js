@@ -8,15 +8,9 @@ function About() {
             <NavBar />
             <div className='about-hero'>
                 <h1>About Me</h1>
-                <div className='scroll-down-arrow'>
-                <a href="#next-section">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e1200f" viewBox="0 0 24 24">
-                        <path d="M12 21L3 9h18L12 21z"/>
-                    </svg>
-                </a>
-                </div>
+                <p>Ready to start your fitness journey? Have questions about my training programs?<br/>I'd love to hear from you!</p>
             </div>
-			<section id="next-section" className='about-next-section'>
+			<section className='about-next-section'>
 				<div className='about-next-container'>
 					<div className='about-next-left'>
 						<img src={'./assets/about_headshot.jpeg'} alt='Coach' className='about-next-image' />

@@ -498,21 +498,21 @@ body p {
 }
 
 .about-hero {
-  background-image: url("../public/assets/peter-gargiulo-cGNCepznaV8-unsplash.jpg");
-  background-size: cover;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.98;
+  background: linear-gradient(180deg, #ed3c3c 0%, #e1200f 100%);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .about-hero h1 {
-  text-shadow: 1px 1px 20px 2px rgb(0 0 0 / 0.2);
-  color: white;
-  border-bottom: #fff 5px solid;
-  padding-bottom: 5px;
+  margin: 0;
+  color: #fff;
+}
+
+.about-hero p {
+  margin: 0;
+  color: #d1d5db;
+  line-height: 1.6;
 }
 
 .about-next-section {
