@@ -9,8 +9,18 @@ import Contact from './components/Contact';
 import HomePage from './components/HomePage';
 import Container from 'react-bootstrap/Container';
 import Footer from './components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React,{useEffect} from "react";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      startEvent: 'load',
+    });
+  }, [])
+
   return (
     <div className="App">
       <Router>

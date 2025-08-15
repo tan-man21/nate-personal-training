@@ -9,10 +9,6 @@ import React,{useEffect} from "react";
 
 function HomePage() {
 
-    useEffect(() => {
-        AOS.init();
-      }, [])
-
   return (
     <div>
         <Container fluid className='home-info-container'>

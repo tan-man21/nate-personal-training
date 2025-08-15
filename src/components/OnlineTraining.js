@@ -17,7 +17,7 @@ function OnlineTraining() {
                     <p>Flexible online training options designed to fit your lifestyle and fitness goals</p>
                 </div>
                 <div className='training-cards-grid'>
-                    <div className='training-card'>
+                    <div className='training-card' data-aos="fade-left" data-aos-duration="500">
                         <img src={'./assets/ludovic-migneault-EZ4TYgXPNWk-unsplash.jpg'} alt='1-on-1 Virtual Training' className='training-card-img' />
                         <div className='training-card-content'>
                             <h3>1-on-1 Virtual Training</h3>
@@ -31,7 +31,7 @@ function OnlineTraining() {
                             <a href='#' className='get-started-btn'>Get Started</a>
                         </div>
                     </div>
-                    <div className='training-card'>
+                    <div className='training-card' data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
                         <img src={'./assets/peter-gargiulo-cGNCepznaV8-unsplash.jpg'} alt='Group Virtual Classes' className='training-card-img' />
                         <div className='training-card-content'>
                             <h3>Group Virtual Classes</h3>
@@ -45,7 +45,7 @@ function OnlineTraining() {
                             <a href='#' className='get-started-btn'>Get Started</a>
                         </div>
                     </div>
-                    <div className='training-card'>
+                    <div className='training-card' data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
                         <img src={'./assets/jonathan-borba-R0y_bEUjiOM-unsplash.jpg'} alt='Custom Workout Plans' className='training-card-img' />
                         <div className='training-card-content'>
                             <h3>Custom Workout Plans</h3>
@@ -68,22 +68,22 @@ function OnlineTraining() {
                     <p>Experience all the benefits of personal training with the convenience of working out at home</p>
                 </div>
                 <div className='benefits-grid'>
-                    <div className='benefit-item'>
+                    <div className='benefit-item' data-aos="fade-up">
                         <div className='benefit-icon'><i className='fa-solid fa-video'></i></div>
                         <h3>Live Video Sessions</h3>
                         <p>Train with me in real-time through HD video calls with interactive coaching</p>
                     </div>
-                    <div className='benefit-item'>
+                    <div className='benefit-item' data-aos="fade-up" data-aos-delay="100">
                         <div className='benefit-icon'><i className='fa-solid fa-calendar'></i></div>
                         <h3>Flexible Scheduling</h3>
                         <p>Book sessions that fit your schedule, with options for early morning or evening workouts</p>
                     </div>
-                    <div className='benefit-item'>
+                    <div className='benefit-item' data-aos="fade-up" data-aos-delay="200">
                         <div className='benefit-icon'><i className='fa-solid fa-chart-line'></i></div>
                         <h3>Progress Tracking</h3>
                         <p>Monitor your improvements with detailed analytics and milestone celebrations</p>
                     </div>
-                    <div className='benefit-item'>
+                    <div className='benefit-item' data-aos="fade-up" data-aos-delay="300">
                         <div className='benefit-icon'><i className='fa-solid fa-heart'></i></div>
                         <h3>Personalized Care</h3>
                         <p>Every workout is tailored to your fitness level, goals, and available equipment</p>
