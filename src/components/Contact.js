@@ -1,7 +1,40 @@
 import NavBar from './NavBar'
 import { Fragment } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ua536wh', 'template_wg244dh', form.current, {
+        publicKey: 'va_-jXz6HRziuNjM-',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          form.current.reset();
+          toast.success('Message Sent!', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
     return (
         <Fragment>
@@ -17,24 +50,24 @@ function Contact() {
                 <div className='contact-card'>
                     <h3>Send Me a Message</h3>
                     <p className='contact-sub'>Fill out the form below and I&apos;ll respond within 24 hours</p>
-                    <form className='contact-form' onSubmit={(e) => e.preventDefault()}>
+                    <form className='contact-form' ref={form} onSubmit={sendEmail}>
                         <div className='contact-grid'>
                             <div className='form-field'>
                                 <label className='contact-label'>Full Name *</label>
-                                <input className='contact-input' type='text' placeholder='Your full name' />
+                                <input className='contact-input' type='text' placeholder='Your full name' name='name' />
                             </div>
                             <div className='form-field'>
                                 <label className='contact-label'>Email Address *</label>
-                                <input className='contact-input' type='email' placeholder='your.email@example.com' />
+                                <input className='contact-input' type='email' placeholder='your.email@example.com' name='email' />
                             </div>
                         </div>
                         <div className='form-field'>
                             <label className='contact-label'>Subject *</label>
-                            <input className='contact-input' type='text' placeholder="What's this about?" />
+                            <input className='contact-input' type='text' placeholder="What's this about?" name='subject' />
                         </div>
                         <div className='form-field'>
                             <label className='contact-label'>Message *</label>
-                            <textarea className='contact-textarea' rows='4' placeholder='Tell me about your fitness goals, questions, or how I can help you...'></textarea>
+                            <textarea className='contact-textarea' rows='4' placeholder='Tell me about your fitness goals, questions, or how I can help you...' name='message'></textarea>
                         </div>
                         <button type='submit' className='contact-button'>Send Message</button>
                     </form>
@@ -70,6 +103,7 @@ function Contact() {
                     </div>
                 </div>
             </section>
+            <ToastContainer />
         </Fragment>
     )
 }

@@ -557,7 +557,7 @@ body p {
 }
 
 .about-next-right {
-  display: grid;
+  /* display: grid; */
   gap: 16px;
   padding: 0 10px; /* equal horizontal spacing */
 }
