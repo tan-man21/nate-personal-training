@@ -12,7 +12,7 @@ function NavBar() {
     return (
         <Navbar className='site-navbar' data-bs-theme="dark" key={'lg'} expand={'lg'} sticky='top' >
         <Container>
-          <Navbar.Brand href="/">My Logo</Navbar.Brand>
+          <Navbar.Brand href="/">Personal Trainer</Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-lg`}
