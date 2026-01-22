@@ -1,13 +1,12 @@
 import { Fragment } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar'
 import OnlineTraining from './components/OnlineTraining';
 import About from './components/About';
 import Contact from './components/Contact';
 import HomePage from './components/HomePage';
-import Container from 'react-bootstrap/Container';
 import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
