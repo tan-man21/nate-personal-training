@@ -21,7 +21,7 @@ function HomePage() {
             <Row data-aos="fade-up">
                 <Col className='pt-3'>
                     <h2 style={{color: '#e1200f'}}>Custom Online Personal Training & Nutrition</h2>
-                    <p className='text-white'>Thisi idfansdfi fadnfaklsdnfaleflak difa dnfakdlfiawe finfaldf iefa</p>
+                    <p className='text-white'>Training Found Here</p>
                 </Col>
             </Row>
             <Row noGutters className='d-flex justify-content-space-between'>
