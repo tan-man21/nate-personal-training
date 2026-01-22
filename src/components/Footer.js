@@ -48,7 +48,7 @@ function Footer() {
                 <Col className='text-center align-content-center' xs={12} md={6} data-aos="fade-up">
                     <h5>CONTACT ME</h5>
                     <br />
-                    <h5>nate@peterson.com</h5>
+                    <h5>personal@trainer.com</h5>
                 </Col>
                 <Col xs={12} md={6} data-aos="fade-up">
                     <Form className='p-5' ref={form} onSubmit={sendEmail}>

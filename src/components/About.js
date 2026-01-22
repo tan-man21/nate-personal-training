@@ -13,11 +13,11 @@ function About() {
 			<section className='about-next-section'>
 				<div className='about-next-container'>
 					<div className='about-next-left'>
-						<img src={'./assets/about_headshot.jpeg'} alt='Coach' className='about-next-image' />
+						<img src={'./assets/headshot.jpg'} alt='Coach' className='about-next-image' />
 					</div>
 					<div className='about-next-right'>
 						<h2>About Me</h2>
-						<p className='about-intro'>Hi, I'm Nate Peterson, a certified personal trainer. My passion is helping individuals improve their strength, performance, and overall health with practical, sustainable guidance.</p>
+						<p className='about-intro'>Hi, I'm Personal Trainer, a certified personal trainer. My passion is helping individuals improve their strength, performance, and overall health with practical, sustainable guidance.</p>
 
 						<h3>My Approach</h3>
 						<p>I believe fitness should be sustainable and enjoyable. My training philosophy focuses on creating personalized workout and nutrition plans that fit your lifestyle, goals, and fitness level.</p>

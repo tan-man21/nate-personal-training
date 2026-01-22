@@ -21,7 +21,7 @@ function NavBar() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
-                  Offcanvas
+                  Menu
                 </Offcanvas.Title>
               </Offcanvas.Header>
           <Nav className="justify-content-end" variant="underline" defaultActiveKey="/">

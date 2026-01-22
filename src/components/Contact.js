@@ -84,14 +84,14 @@ function Contact() {
                                 <i className='fa-solid fa-envelope'></i>
                             </div>
                             <div className='reach-title'>Email</div>
-                            <div className='reach-detail'>nate@peterson.com</div>
+                            <div className='reach-detail'>personal@trainer.com</div>
                         </div>
                         <div className='reach-item'>
                             <div className='reach-icon'>
                                 <i className='fa-solid fa-phone'></i>
                             </div>
                             <div className='reach-title'>Phone</div>
-                            <div className='reach-detail'>(555) 123-4567</div>
+                            <div className='reach-detail'>(111) 111-1111</div>
                         </div>
                         <div className='reach-item'>
                             <div className='reach-icon'>

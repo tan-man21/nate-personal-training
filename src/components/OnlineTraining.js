@@ -18,7 +18,7 @@ function OnlineTraining() {
                 </div>
                 <div className='training-cards-grid'>
                     <div className='training-card' data-aos="fade-left" data-aos-duration="500">
-                        <img src={'./assets/ludovic-migneault-EZ4TYgXPNWk-unsplash.jpg'} alt='1-on-1 Virtual Training' className='training-card-img' />
+                        <img src={'./assets/jonathan-borba-R0y_bEUjiOM-unsplash.jpg'} alt='1-on-1 Virtual Training' className='training-card-img' />
                         <div className='training-card-content'>
                             <h3>1-on-1 Virtual Training</h3>
                             <p className='price'>$79 <span>per session</span></p>
@@ -32,7 +32,7 @@ function OnlineTraining() {
                         </div>
                     </div>
                     <div className='training-card' data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
-                        <img src={'./assets/peter-gargiulo-cGNCepznaV8-unsplash.jpg'} alt='Group Virtual Classes' className='training-card-img' />
+                        <img src={'./assets/jonathan-borba-R0y_bEUjiOM-unsplash.jpg'} alt='Group Virtual Classes' className='training-card-img' />
                         <div className='training-card-content'>
                             <h3>Group Virtual Classes</h3>
                             <p className='price'>$29 <span>per class</span></p>

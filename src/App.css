@@ -676,7 +676,11 @@ body p {
     font-size: 4vw;
   }
 
-  .home-info-container { height: 70vh; }
+  .about-me-image {
+    display: none;
+  }
+
+  .home-info-container { height: 25vh; }
   .home-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
   .home-content { padding: 0 16px; }
   .home-content h1 {
