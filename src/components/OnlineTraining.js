@@ -28,7 +28,7 @@ function OnlineTraining() {
                                 <li><i className='fa-solid fa-circle-check'></i> Flexible scheduling</li>
                                 <li><i className='fa-solid fa-circle-check'></i> Progress tracking</li>
                             </ul>
-                            <a href='#' className='get-started-btn'>Get Started</a>
+                            <a href='/contact' className='get-started-btn'>Get Started</a>
                         </div>
                     </div>
                     <div className='training-card' data-aos="fade-left" data-aos-duration="500" data-aos-delay="100">
@@ -42,7 +42,7 @@ function OnlineTraining() {
                                 <li><i className='fa-solid fa-circle-check'></i> Live interactive classes</li>
                                 <li><i className='fa-solid fa-circle-check'></i> Multiple time slots</li>
                             </ul>
-                            <a href='#' className='get-started-btn'>Get Started</a>
+                            <a href='/contact' className='get-started-btn'>Get Started</a>
                         </div>
                     </div>
                     <div className='training-card' data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
@@ -56,7 +56,7 @@ function OnlineTraining() {
                                 <li><i className='fa-solid fa-circle-check'></i> Equipment adaptations</li>
                                 <li><i className='fa-solid fa-circle-check'></i> Video demonstrations</li>
                             </ul>
-                            <a href='#' className='get-started-btn'>Get Started</a>
+                            <a href='/contact' className='get-started-btn'>Get Started</a>
                         </div>
                     </div>
                 </div>

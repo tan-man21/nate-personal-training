@@ -3,9 +3,8 @@ import '../App.css';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React,{useEffect} from "react";
+import React from "react";
 
 function HomePage() {
 
